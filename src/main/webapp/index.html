@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="styles/main.css?v=1" type="text/css"/>
+
+</head>
+<body>
+    <img src="images/Murach.png" alt="Murach Logo" class="logo">
+    <h1>Survey</h1>
+    <p>To join our email list, enter your name and
+        email address below.</p>
+    <h2> Your information</h2>
+    <form action="emailList" method="post">
+        <input type="hidden" name="action" value="add">
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label>First Name:</label>
+        <input type="text" name="firstName" required><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required><br>
+
+        <label>Date of Birth</label>
+        <input type="text" name="dateOfBirth" required><br>
+
+        <label>&nbsp;</label>
+        <input type="submit" value="Join Now" id="submit">
+
+        <h2>How did you hear about us?</h2>
+        <input type="radio" name="heardFrom" value="Search engine" checked> Search engine
+        <input type="radio" name="heardFrom" value="Word of mouth"> Word of mouth
+        <input type="radio" name="heardFrom" value="Social Media"> Social Media
+        <input type="radio" name="heardFrom" value="Other"> Other<br>
+
+        <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+        <input type="checkbox" name="wantsUpdates" value="Yes"> YES, I'd like that.<br>
+        <input type="checkbox" name="wantsUpdates" value="Yes"> YES, please send me later.<br>
+        <label style="float: none; width: auto; white-space: nowrap;">Please contact me by:</label>
+            <select name="contactVia">
+                <option value="Email or postal mail">Email or postal mail</option>
+                <option value="Email only">Email only</option>
+                <option value="Postal mail only">Postal mail only</option>
+            </select><br><br>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+</body>
+</html>
