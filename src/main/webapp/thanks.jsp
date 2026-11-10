@@ -12,13 +12,19 @@
     <p>Here is the information that you entered:</p>
 
     <label>Email:</label>
-    <span>${user.email}</span><br>
+    <span>${survey.user.email}</span><br>
     <label>First Name:</label>
-    <span>${user.firstName}</span><br>
+    <span>${survey.user.firstName}</span><br>
     <label>Last Name:</label>
-    <span>${user.lastName}</span><br>
+    <span>${survey.user.lastName}</span><br>
     <label>Date of Birth:</label>
-    <span>${user.dateOfBirth}</span><br>
+    <span>${survey.user.dateOfBirth}</span><br>
+    <label>Heard From:</label>
+    <span>${survey.heardFrom}</span><br>
+    <label>Updates:</label>
+    <span>${survey.wantsUpdates}</span><br>
+    <label>Contact Via:</label>
+    <span>${survey.contactVia}</span><br><br>
 <p>To enter another email address, click on the Back
     button in your browser or the Return button shown
     below.</p>
